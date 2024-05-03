@@ -7,4 +7,56 @@
     --color6: #fac402;
     --color7: #ffdd02;
     --color8: #fbfcd4;
+    --color9: #957609;
+
+
+    --max-width: 1200px;
+    --header-font: "Oswald", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--color5);
+    text-align: center;
+}
+
+.section__description {
+    color: var(--color3);
+}
+
+.btn {
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--color8);
+    border-radius: 2px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn__primary {
+    background-color: var(--color6);
+}
+
+.btn__primary:hover {
+    background-color: var(--color7);
+}
+
+body {
+    /* font-family: "Oswald", sans-serif; */
+    font-family: "Poppins", sans-serif;
 }
