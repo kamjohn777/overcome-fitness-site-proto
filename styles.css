@@ -106,7 +106,7 @@ nav {
     background-color: var(--color5);
 }
 
-.nav_logo img {
+.nav__logo img {
     max-width: 90px;
 }
 
@@ -116,7 +116,7 @@ nav {
     cursor: pointer;
 }
 
-.nav_links {
+.nav__links {
     position: absolute;
     top: 68px;
     left: 0;
@@ -131,5 +131,21 @@ nav {
     background-color: var(--color5);
     transition: .5s;
     z-index: -1;
-    /* transform: translateY(-100%); */
+    transform: translateY(-100%);
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links a {
+    font-size: 1.1rem;
+    font-family: var(--header-font);
+    white-space: nowrap;
+    color: var(--color8);
+    transition: 0.3s;
+}
+
+.nav__links a:hover {
+    color: var(--color6);
 }
