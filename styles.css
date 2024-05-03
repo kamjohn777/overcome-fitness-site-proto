@@ -344,6 +344,86 @@ nav {
 .trainer__card p {
     margin-bottom: 1rem;
     color: var(--text-color3);
+    text-align: center;
+}
+
+.trainer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.trainer__socials a {
+    font-size: 1.25rem;
+    color: var(--text-color2);
+}
+
+.trainer__socials a:hover {
+    color: var(--color6);
+}
+
+.membership {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8)
+    ), url("./assets/membership.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.membership__container .section__header {
+    color: var(--color8);
+}
+
+.membership__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership__card {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.membership__card:hover {
+    background-color: var(--color7);
+}
+
+.membership__card h4 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--color8);
+}
+
+.membership__card ul {
+    margin-bottom: 1rem;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership__card ul li {
+    display: flex;
+   color: var(--color8);
+    gap: 10px;
+}
+
+.membership__card ul li span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color6);
+    transition: 0.3s;
+}
+
+.membership__card ul li span:hover {
+    color: var(--color8);
 }
 
 @media (width > 540px) {
@@ -354,8 +434,12 @@ nav {
     .session__card {
         padding: 7rem 2rem;
     }
+
+    .trainer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-/* 33:19 */
+
 @media (width > 768px) {
   nav {
     position: static;
@@ -427,4 +511,18 @@ nav {
 .session__card {
     padding: 10rem 2rem;
 }
+
+.session__card {
+    padding: 10rem 2rem;
+}
+
+.trainer__grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (width > 1024px) {
+    .trainer__grid {
+        gap: 2rem;
+    }
 }

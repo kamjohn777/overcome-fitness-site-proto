@@ -42,4 +42,10 @@ $(document).ready(function () {
     interval: 500,
     delay: 500, // Add this line
   });
+
+  ScrollReveal().reveal(".trainer__card", {
+    ...scrollReavealOption,
+    interval: 500,
+    delay: 500, // Add this line
+  });
 });
