@@ -6,8 +6,33 @@ $(document).ready(function () {
     $("#menu-btn i").attr("class", isOpen ? "ri-close-line" : "ri-menu-line");
   });
 
-    $("#nav-links a").on("click", function (e) {
-        $("#nav-links").removeClass("open");
-        $("#menu-btn i").attr("class", "ri-menu-line");
-    });
+  $("#nav-links a").on("click", function (e) {
+    $("#nav-links").removeClass("open");
+    $("#menu-btn i").attr("class", "ri-menu-line");
+  });
+
+  const scrollReavealOption = {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+  };
+
+  ScrollReveal().reveal(".header__content h1", {
+    ...scrollReavealOption,
+  });
+
+  ScrollReveal().reveal(".header__content h2", {
+    ...scrollReavealOption,
+    delay: 500,
+  });
+
+  ScrollReveal().reveal(".header__content p", {
+    ...scrollReavealOption,
+    delay: 1000,
+  });
+
+  ScrollReveal().reveal(".header__btn", {
+    ...scrollReavealOption,
+    delay: 1500,
+  });
 });
