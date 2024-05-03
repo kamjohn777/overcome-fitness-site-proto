@@ -323,6 +323,29 @@ nav {
     color: var(--color8);
 }
 
+.trainer__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.trainer__card img {
+    margin-bottom: 1rem;
+}
+
+.trainer__card h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--text-color1);
+    text-align: center;
+}
+
+.trainer__card p {
+    margin-bottom: 1rem;
+    color: var(--text-color3);
+}
+
 @media (width > 540px) {
     .about__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -391,6 +414,10 @@ nav {
 
 .about__header .section__description {
     text-align: left;
+} */
+
+/* .about__grid {
+    grid-template-columns: repeat(4, 1fr);
 } */
 
 .session {
