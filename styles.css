@@ -71,8 +71,8 @@
 }
 
 .btn__secondary:hover {
-  background-color: var(--color8);
-  border-color: var(--color5);
+  background-color: var(--color7);
+  /* border-color: var(--color6); */
 }
 
 img {
@@ -241,6 +241,98 @@ nav {
     z-index: -1;
 }
 
+.about__card:nth-child(1) h4::before {
+    content: "01";
+}
+
+.about__card:nth-child(2) h4::before {
+    content: "02";
+}
+
+.about__card:nth-child(3) h4::before {
+    content: "03";
+}
+
+.about__card:nth-child(4) h4::before {
+    content: "04";
+}
+
+.about__card p {
+    color: var(--text-color3);
+}
+
+.session {
+    display: grid;
+}
+
+.session__card {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.session__card:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/session-1.jpg");
+}
+
+.session__card:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/session-2.jpg");
+}
+
+.session__card:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/session-3.jpg");
+}
+
+.session__card:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/session-4.jpg");
+}
+
+.session__card h4 {
+    position: relative;
+    isolation: isolate;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--color8);
+}
+
+.session__card h4::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -5px;
+    height: 25px;
+    aspect-ratio: 1;
+    background-color: var(--color7);
+    z-index: -1;
+}
+
+.session__card p {
+    max-width: 350px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    color: var(--color8);
+}
+
+@media (width > 540px) {
+    .about__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .session__card {
+        padding: 7rem 2rem;
+    }
+}
+/* 33:19 */
 @media (width > 768px) {
   nav {
     position: static;
@@ -260,7 +352,7 @@ nav {
   }
 
   .nav__logo img {
-    max-width: 120px;
+    max-width: 160px;
   }
 
   .nav__menu__btn {
@@ -285,4 +377,27 @@ nav {
   .header__content {
     grid-column: 2/3;
   }
+
+  /* Below styles will put the about us text on left and paragraph on right */
+  /* .about__header {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .about__header .section__header {
+    text-align: right;
+}
+
+.about__header .section__description {
+    text-align: left;
+} */
+
+.session {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.session__card {
+    padding: 10rem 2rem;
+}
 }

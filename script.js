@@ -35,4 +35,11 @@ $(document).ready(function () {
     ...scrollReavealOption,
     delay: 1500,
   });
+
+  ScrollReveal().reveal(".about__card", {
+    ...scrollReavealOption,
+    duration: 1000,
+    interval: 500,
+    delay: 500, // Add this line
+  });
 });
