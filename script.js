@@ -49,6 +49,12 @@ $(document).ready(function () {
     delay: 500, // Add this line
   });
 
+  ScrollReveal().reveal(".blog__card", {
+    ...scrollReavealOption,
+    interval: 500,
+    delay: 1500,
+  });
+
   const swiperInstance = new Swiper(".swiper", {
     loop: true,
     pagination: {
