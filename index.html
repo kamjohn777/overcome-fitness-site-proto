@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Honk&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css" />
     <title>OverCome Fitness</title>
   </head>
@@ -221,116 +226,213 @@
 
     <section class="membership">
       <div class="section__container membership__container">
+        <!-- Membership Header -->
         <h2 class="section__header">MEMBERSHIP</h2>
-        V<div class="membership__grid">
-            <div class="membership__card">
-              <h4>BASIC</h4>
-              <ul>
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Access to strength-building classes: weightlifting, bodyweight exercises,
-                  resistance training.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Cardiovascular workouts: running, cycling, HIIT sessions.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Flexibility and mobility sessions: stretching, mobility drills,
-                  foam rolling.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Functional training: kettlebell exercises, medicine ball
-                  workouts, agility drills.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Mind-body connection classes: meditation, Tai Chi, mindfulness
-                  practices.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Specialized workshops: nutrition seminars, injury prevention,
-                  recovery techniques.
-                </li>
-              </ul>
-              <h3><sup>$</sup>30<span>/month</span></h3>
-              <button class="btn btn__primary">JOIN NOW</button>
-            </div>
-          
-            <div class="membership__card">
-              <h4>PREMIUM</h4>
-              <ul>
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Access to all basic features plus advanced classes.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Personalized training sessions with certified trainers.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Nutrition consultation and meal planning guidance.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Priority booking for all classes and workshops.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Exclusive access to member-only events and discounts.
-                </li>
-              </ul>
-              <h3><sup>$</sup>45<span>/month</span></h3>
-              <button class="btn btn__primary">JOIN NOW</button>
-            </div>
-          
-            <div class="membership__card">
-              <h4>ELITE</h4>
-              <ul>
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Access to all premium features plus additional perks.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  One-on-one coaching and personalized fitness plans.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Unlimited access to all classes, workshops, and facilities.
-                </li>
-          
-                <li>
-                  <span><i class="ri-check-line"></i></span>
-                  Exclusive VIP treatment and benefits.
-                </li>
-              </ul>
-              <h3><sup>$</sup>60<span>/month</span></h3>
-              <button class="btn btn__primary">JOIN NOW</button>
+
+        <div class="membership__grid">
+          <div class="membership__card">
+            <!-- Basic Membership Card -->
+            <h4>BASIC</h4>
+            <ul>
+              <li>
+                <!-- Basic Feature 1 -->
+                <span><i class="ri-check-line"></i></span>
+                Access to strength-building classes: weightlifting, bodyweight
+                exercises, resistance training.
+              </li>
+
+              <li>
+                <!-- Basic Feature 2 -->
+                <span><i class="ri-check-line"></i></span>
+                Cardiovascular workouts: running, cycling, HIIT sessions.
+              </li>
+
+              <li>
+                <!-- Basic Feature 3 -->
+                <span><i class="ri-check-line"></i></span>
+                Flexibility and mobility sessions: stretching, mobility drills,
+                foam rolling.
+              </li>
+
+              <li>
+                <!-- Basic Feature 4 -->
+                <span><i class="ri-check-line"></i></span>
+                Functional training: kettlebell exercises, medicine ball
+                workouts, agility drills.
+              </li>
+
+              <li>
+                <!-- Basic Feature 5 -->
+                <span><i class="ri-check-line"></i></span>
+                Mind-body connection classes: meditation, Tai Chi, mindfulness
+                practices.
+              </li>
+
+              <li>
+                <!-- Basic Feature 6 -->
+                <span><i class="ri-check-line"></i></span>
+                Specialized workshops: nutrition seminars, injury prevention,
+                recovery techniques.
+              </li>
+            </ul>
+            <h3><sup>$</sup>30<span>/month</span></h3>
+            <button class="btn btn__primary">JOIN NOW</button>
+          </div>
+
+          <div class="membership__card">
+            <!-- Premium Membership Card -->
+            <h4>PREMIUM</h4>
+            <ul>
+              <li>
+                <!-- Premium Feature 1 -->
+                <span><i class="ri-check-line"></i></span>
+                Personalized training sessions with certified trainers.
+              </li>
+
+              <li>
+                <!-- Premium Feature 2 -->
+                <span><i class="ri-check-line"></i></span>
+                Nutrition consultation and meal planning guidance.
+              </li>
+
+              <li>
+                <!-- Premium Feature 3 -->
+                <span><i class="ri-check-line"></i></span>
+                Priority booking for all classes and workshops.
+              </li>
+
+              <li>
+                <!-- Premium Feature 4 -->
+                <span><i class="ri-check-line"></i></span>
+                Access to all basic features plus advanced classes.
+              </li>
+
+              <li>
+                <!-- Premium Feature 5 -->
+                <span><i class="ri-check-line"></i></span>
+                Exclusive access to member-only events and discounts.
+              </li>
+
+              <li>
+                <!-- Premium Feature 6 -->
+                <span><i class="ri-check-line"></i></span>
+                Free access to gym facilities during non-peak hours.
+              </li>
+            </ul>
+            <h3><sup>$</sup>45<span>/month</span></h3>
+            <button class="btn btn__primary">JOIN NOW</button>
+          </div>
+
+          <div class="membership__card">
+            <!-- Elite Membership Card -->
+            <h4>ELITE</h4>
+            <ul>
+              <li>
+                <!-- Elite Feature 1 -->
+                <span><i class="ri-check-line"></i></span>
+                One-on-one coaching and personalized fitness plans.
+              </li>
+
+              <li>
+                <!-- Elite Feature 2 -->
+                <span><i class="ri-check-line"></i></span>
+                Unlimited access to all classes, workshops, and facilities.
+              </li>
+
+              <li>
+                <!-- Elite Feature 3 -->
+                <span><i class="ri-check-line"></i></span>
+                Exclusive VIP treatment and benefits.
+              </li>
+
+              <li>
+                <!-- Elite Feature 4 -->
+                <span><i class="ri-check-line"></i></span>
+                Access to all premium features plus additional perks.
+              </li>
+
+              <li>
+                <!-- Elite Feature 5 -->
+                <span><i class="ri-check-line"></i></span>
+                Complimentary personal training session every month.
+              </li>
+
+              <li>
+                <!-- Elite Feature 6 -->
+                <span><i class="ri-check-line"></i></span>
+                Discounted rates on nutrition supplements and apparel.
+              </li>
+            </ul>
+            <h3><sup>$</sup>60<span>/month</span></h3>
+            <button class="btn btn__primary">JOIN NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">OUR TESTIMONIALS</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-1.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                ive been training with Overcome Fitness for over a year now, and
+                I can honestly say it's been life-changing. The coaches are
+                incredibly knowledgeable and supportive, and the community is so
+                welcoming. I've seen amazing results in my strength and
+                endurance, and I feel more confident and empowered than ever
+                before. I can't recommend Overcome Fitness enough!
+              </p>
+              <h4>Rebecca Robinson</h4>
             </div>
           </div>
-          
+
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-2.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                The classes at Overcome Fitness are top-notch. The trainers are
+                amzing and encouraging, and the workouts are challenging but
+                fun. I've never felt stronger or more confident in my abilities.
+                I love the sense of community and support that Overcome Fitness
+                provides. It's truly a special place.
+              </p>
+              <h4>James Young</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="./assets/client-1.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                The coaches at Overcome Fitness are the best in the business.
+                Constant motivation and support, they push you to be your best
+                self. The community is amazing, and I've made so many friends
+                here. I've never felt stronger or more confident in my
+                abilities. I love the sense of community and support that
+                Overcome Fitness provides. It's truly a special place.
+              </p>
+              <h4>Maggie White</h4>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>
-<!-- 56:04 -->

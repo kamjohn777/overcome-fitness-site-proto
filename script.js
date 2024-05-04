@@ -48,4 +48,12 @@ $(document).ready(function () {
     interval: 500,
     delay: 500, // Add this line
   });
+
+  const swiperInstance = new Swiper(".swiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 });
