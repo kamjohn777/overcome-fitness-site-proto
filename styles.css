@@ -553,6 +553,24 @@ nav {
   margin-inline: auto;
 }
 
+.footer {
+    background-color: var(--text-color1);
+}
+
+.footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer__logo img {
+    margin-bottom: 1rem;
+    max-width: 120px;
+}
+
+.footer__col p {
+    margin-bottom: 2rem;
+}
+
 @media (width > 540px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
