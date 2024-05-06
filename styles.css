@@ -572,6 +572,98 @@ nav {
     color: var(--text-color2);
 }
 
+.footer__logo img {
+    margin-bottom: 1rem;
+    max-width: 120px;
+}
+
+.footer__col p {
+    margin-bottom: 2rem;
+    color: var(--text-color3);
+}
+
+.footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links li a {
+    color: var(--text-color3);
+    transition: 0.3s;
+}
+
+.footer__links li a:hover {
+    color: var(--color8);
+}
+
+.footer__links li a span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--color7);
+}
+
+.footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--color8);
+}
+
+.gallery__grid {
+    max-width: 275px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.footer__col form {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color8);
+    border-radius: 2px;
+}
+
+.footer__col form input {
+    padding-inline: 1rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: var(--color5);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: var(--color7);
+    background-color: var(--color8);
+    border-radius: 100%;
+}
+
+.footer__socials a:hover {
+    background-color: var(--color7);
+    color: var(--color8);
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color2);
+    text-align: center;
+}
+
 @media (width > 540px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -590,6 +682,10 @@ nav {
   }
 
   .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -684,6 +780,10 @@ nav {
 
   .logo__banner {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
