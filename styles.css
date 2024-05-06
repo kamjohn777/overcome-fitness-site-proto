@@ -569,6 +569,7 @@ nav {
 
 .footer__col p {
     margin-bottom: 2rem;
+    color: var(--text-color2);
 }
 
 @media (width > 540px) {
