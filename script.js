@@ -62,4 +62,17 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+  $(".search-input-div input").on("focus", function (e) {
+    e.preventDefault();
+    $(this).parent().addClass("active"); // Add the active class to the parent div
+    $(this).siblings(".input-suggestions-wrap").addClass("active");
+    $(this).siblings(".input-suggestions-wrap").slideDown(300);
+  });
+  
+  $(".search-input-div input").on("blur", function (e) {
+    $(this).parent().removeClass("active"); // Remove the active class from the parent div
+    $(this).siblings(".input-suggestions-wrap").removeClass("active");
+    $(this).siblings(".input-suggestions-wrap").slideUp(300); 
+  });
 });

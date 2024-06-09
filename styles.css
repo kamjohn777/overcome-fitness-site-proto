@@ -554,114 +554,114 @@ nav {
 }
 
 .footer {
-    background-color: var(--text-color1);
+  background-color: var(--text-color1);
 }
 
 .footer__container {
-    display: grid;
-    gap: 4rem 2rem;
+  display: grid;
+  gap: 4rem 2rem;
 }
 
 .footer__logo img {
-    margin-bottom: 1rem;
-    max-width: 120px;
+  margin-bottom: 1rem;
+  max-width: 120px;
 }
 
 .footer__col p {
-    margin-bottom: 2rem;
-    color: var(--text-color2);
+  margin-bottom: 2rem;
+  color: var(--text-color2);
 }
 
 .footer__logo img {
-    margin-bottom: 1rem;
-    max-width: 120px;
+  margin-bottom: 1rem;
+  max-width: 120px;
 }
 
 .footer__col p {
-    margin-bottom: 2rem;
-    color: var(--text-color3);
+  margin-bottom: 2rem;
+  color: var(--text-color3);
 }
 
 .footer__links {
-    list-style: none;
-    display: grid;
-    gap: 1rem;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
 }
 
 .footer__links li a {
-    color: var(--text-color3);
-    transition: 0.3s;
+  color: var(--text-color3);
+  transition: 0.3s;
 }
 
 .footer__links li a:hover {
-    color: var(--color8);
+  color: var(--color8);
 }
 
 .footer__links li a span {
-    margin-right: 10px;
-    font-size: 1.2rem;
-    color: var(--color7);
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: var(--color7);
 }
 
 .footer__col h4 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: var(--header-font);
-    color: var(--color8);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  color: var(--color8);
 }
 
 .gallery__grid {
-    max-width: 275px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  max-width: 275px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .footer__col form {
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color8);
-    border-radius: 2px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color8);
+  border-radius: 2px;
 }
 
 .footer__col form input {
-    padding-inline: 1rem;
-    outline: none;
-    border: none;
-    width: 100%;
-    background-color: transparent;
-    color: var(--color5);
+  padding-inline: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  color: var(--color5);
 }
 
 .footer__socials {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer__socials a {
-    padding: 5px 10px;
-    font-size: 1.25rem;
-    color: var(--color7);
-    background-color: var(--color8);
-    border-radius: 100%;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  color: var(--color7);
+  background-color: var(--color8);
+  border-radius: 100%;
 }
 
 .footer__socials a:hover {
-    background-color: var(--color7);
-    color: var(--color8);
+  background-color: var(--color7);
+  color: var(--color8);
 }
 
 .footer__bar {
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-color2);
-    text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color2);
+  text-align: center;
 }
 
 /* NEW FEATURES SECTION */
@@ -678,6 +678,22 @@ nav {
   align-items: center;
 }
 
+.search-recipes-sec form {
+  height: 380px;
+  max-height: 500px;
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.search-recipes-sec button {
+  height: 56px;
+  width: 398px;
+  background-color: var(--color7);
+  border: none;
+}
+
 .search-recipes-sec::before {
   content: "";
   position: absolute;
@@ -685,7 +701,12 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); /* Change this to the color and opacity you want for the mask */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); 
 }
 
 .search-recipes-sec > * {
@@ -708,7 +729,7 @@ nav {
   background-color: #201d1dde;
   justify-content: space-around;
   align-items: center;
-} 
+}
 
 .left-bg-img-wrap {
   height: 475px;
@@ -723,9 +744,33 @@ nav {
   width: 484px;
 }
 
-.add-details-wrap  {
-  height: 475px;
+.add-details-wrap {
+  /* height: 475px;
   width: 398px;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around; */
+
+  height: 505px;
+  width: 398px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.add-details-wrap h3 {
+  height: 43px;
+  width: 300px;
+  color: #ffffff;
+  font-size: 38px;
+}
+
+.add-details-wrap img {
+  height: 6px;
+  width: 88px;
+
 }
 
 .search-input-div {
@@ -737,21 +782,63 @@ nav {
   justify-content: flex-start;
   padding-left: 20px;
   gap: 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.search-input-div.active {
+  margin-bottom: 40px;
 }
 
 .search-input-div input {
   background-color: transparent;
-  color: grey; 
+  color: grey;
   border: none;
   font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.search-input-div input:focus {
+  outline: none;
 }
 
 /* Change the placeholder color */
 .search-input-div input::placeholder {
-  color: grey; 
+  color: grey;
 }
 
+/* test */
+.input-suggestions-wrap {
+  /* display: none;
+  transition: top 0.3s ease-in-out; */
 
+
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 398px;
+  background-color: var(--color8);
+  z-index: 1;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-suggestions-wrap.active {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  position: absolute;
+  /* top: 100%; */
+  top: calc(100% + 10px);
+  left: 0;
+  width: 398px;
+  background-color: var(--color8);
+  z-index: 1;
+  border: none;
+}
+/* end of test */
 /* END OF NEW FEATURES SECTION */
 
 @media (width > 540px) {
