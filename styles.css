@@ -664,6 +664,96 @@ nav {
     text-align: center;
 }
 
+/* NEW FEATURES SECTION */
+.search-recipes-sec {
+  position: relative;
+  background-image: url(./assets/search-recipes-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 863px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search-recipes-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Change this to the color and opacity you want for the mask */
+}
+
+.search-recipes-sec > * {
+  position: relative;
+  z-index: 2; /* Add this line */
+}
+
+.search-recipes-sec h2 {
+  width: 320px;
+  text-align: center;
+  font-size: 40px;
+  height: fit-content;
+  color: var(--color8);
+}
+
+.search-recipes-wrap {
+  display: flex;
+  height: 595px;
+  width: 1094px;
+  background-color: #201d1dde;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+.left-bg-img-wrap {
+  height: 475px;
+  width: 500px;
+  background-color: var(--color7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-bg-img-wrap img {
+  height: 457px;
+  width: 484px;
+}
+
+.add-details-wrap  {
+  height: 475px;
+  width: 398px;
+}
+
+.search-input-div {
+  width: 398px;
+  height: 56px;
+  background-color: var(--color8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.search-input-div input {
+  background-color: transparent;
+  color: grey; 
+  border: none;
+  font-size: 18px;
+}
+
+/* Change the placeholder color */
+.search-input-div input::placeholder {
+  color: grey; 
+}
+
+
+/* END OF NEW FEATURES SECTION */
+
 @media (width > 540px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
