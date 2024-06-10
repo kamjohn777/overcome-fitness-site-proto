@@ -55,6 +55,7 @@ $(document).ready(function () {
     delay: 1500,
   });
 
+
   const swiperInstance = new Swiper(".swiper", {
     loop: true,
     pagination: {
@@ -71,7 +72,7 @@ $(document).ready(function () {
   });
   
   $(".search-input-div input").on("blur", function (e) {
-    $(this).parent().removeClass("active"); // Remove the active class from the parent div
+    $(this).parent().removeClass("active"); 
     $(this).siblings(".input-suggestions-wrap").removeClass("active");
     $(this).siblings(".input-suggestions-wrap").slideUp(300); 
   });
