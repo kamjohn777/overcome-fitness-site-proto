@@ -903,6 +903,20 @@ nav {
   top: 0%;
   box-shadow: 3px 1px 14px lightgrey;
 }
+
+.add-detail-workout-div h3 {
+  z-index: 1;
+}
+
+.add-detail-workout-div form {
+  position: relative;
+  height: 380px;
+    max-height: 500px;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 /* End of search-workout-sec code */
 /* END OF NEW FEATURES SECTION */
 
