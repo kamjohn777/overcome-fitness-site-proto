@@ -962,7 +962,7 @@ nav {
 /* End of search-workout-sec code */
 /* END OF NEW FEATURES SECTION */
 
-@media (width > 320px) {
+@media (min-width: 320px) and (max-width: 539px) {
 .search-workout-sec {
   margin-bottom: 550px;
   /* height: 100vh; */
@@ -995,7 +995,8 @@ nav {
   }
 }
 
-@media (width > 540px) {
+
+@media (min-width: 539px) and (max-width: 767px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1019,9 +1020,47 @@ nav {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* .search-workout-wrap {
+    display: flex;
+    flex-direction: column;
+  } */
+
+
+
+  .search-workout-sec {
+    margin-bottom: 550px;
+    /* height: 100vh; */
+  }
+  
+    .search-workout-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sww-img-wrap img {
+      margin-top: 50px;
+    }
+  
+    .yellow-box-wrap  {
+      margin-top: 70px;
+    }
+  
+    .search-recipes-sec {
+      background-image: url(./assets/mobile-recipe-bg.png);
+      /* height: 100rem; */
+      height: 85rem;
+    }
+  
+    .search-recipes-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1200px;
+    }
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   nav {
     position: static;
     padding: 1.5rem 1rem;
@@ -1116,9 +1155,14 @@ nav {
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+      .search-workout-wrap {
+        display: flex;
+        /* flex-direction: column; */
+    }
 }
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
   .trainer__grid {
     gap: 2rem;
   }
@@ -1130,4 +1174,8 @@ nav {
   .membership__card {
     padding: 2rem;
   }
+
+  /* .search-workout-wrap {
+    display: flex;
+} */
 }
