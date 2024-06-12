@@ -76,4 +76,23 @@ $(document).ready(function () {
     $(this).siblings(".input-suggestions-wrap").removeClass("active");
     $(this).siblings(".input-suggestions-wrap").slideUp(300); 
   });
+
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+
+    const fitnessGoals = $('#fitnessGoals').val();
+    const dietGoals = $('#dietGoals').val();
+    const mealType = $('#mealType').val();
+    const caloriesRange = $('#caloriesRange').val();
+
+
+    // Store the input values in localStorage
+    localStorage.setItem('fitnessGoals', fitnessGoals); 
+    localStorage.setItem('dietGoals', dietGoals);
+    localStorage.setItem('mealType', mealType);
+    localStorage.setItem('caloriesRange', caloriesRange);
+
+    // Redirect to the search results page
+    window.location.href = './Excercises.html';
+  });
 });
