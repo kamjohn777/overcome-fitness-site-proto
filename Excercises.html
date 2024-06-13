@@ -41,13 +41,53 @@
 
       <section class="filter-sec">
         <h2>Filters</h2>
-
+        <form id="filter-form">
+          <label for="workout-type">Workout Type:</label>
+          <select id="workout-type">
+            <option value="">Select a workout type</option>
+            <option value="cardio">Cardio</option>
+            <option value="strength">Strength</option>
+            <option value="flexibility">Flexibility</option>
+          </select>
+      
+          <label for="body-part">Body Part:</label>
+          <select id="body-part">
+            <option value="">Select a body part</option>
+            <option value="arms">Arms</option>
+            <option value="legs">Legs</option>
+            <option value="core">Core</option>
+          </select>
+      
+          <label for="difficulty-level">Difficulty Level:</label>
+          <select id="difficulty-level">
+            <option value="">Select a difficulty level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+      
+          <label for="duration">Duration:</label>
+          <select id="duration">
+            <option value="">Select a duration</option>
+            <option value="short">Short (0-15 minutes)</option>
+            <option value="medium">Medium (15-30 minutes)</option>
+            <option value="long">Long (30+ minutes)</option>
+          </select>
+      
+          <label for="equipment-needed">Equipment Needed:</label>
+          <select id="equipment-needed">
+            <option value="">Select equipment</option>
+            <option value="none">None</option>
+            <option value="dumbbells">Dumbbells</option>
+            <option value="resistance-bands">Resistance Bands</option>
+          </select>
+        </form>
       </section>
   
 
       <div id="exercises"></div>
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="./exerciseScript.js"></script>
+      <!-- <script src="./exerciseScript.js"></script> -->
 </body>
 </html>
