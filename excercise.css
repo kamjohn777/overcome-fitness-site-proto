@@ -213,6 +213,45 @@
     font-size: 3rem;
   }
 
+  .filter-sec {
+    width: 80%;
+    margin: 80px auto;
+  }
+
+  .filter__container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text-color4);
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+  }
+
+  #filter-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-wrap {
+      display: flex;
+      flex-direction: column;
+      height: 90px;
+      color: var(--text-color2);
+      font-family: var(--header-font);
+      justify-content: space-around;
+  }
+
+  .filter-wrap select {
+    width: 158px;
+    height: 45px;
+  }
+
+  #exercises {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* position: absolute;
     top: 68px;

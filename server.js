@@ -12,7 +12,7 @@ app.get('/youtube', async (req, res) => {
     const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
       params: {
         part: 'snippet',
-        maxResults: 5,
+        maxResults: 4,
         q: req.query.q,
         type: 'video',
         key: process.env.YOUTUBE_API_KEY

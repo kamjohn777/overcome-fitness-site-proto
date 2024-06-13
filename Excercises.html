@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./excercise.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./excercise.css" />
     <title>Excercises</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav__bar">
-          <div class="nav__header">
-            <div class="nav__logo">
-              <a href="#"><img src="./assets/Overcome_logo.png" alt="logo" /></a>
-            </div>
-            <div class="nav__menu__btn" id="menu-btn">
-              <i class="ri-menu-line"></i>
-            </div>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#"><img src="./assets/Overcome_logo.png" alt="logo" /></a>
           </div>
-          <ul class="nav__links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#trainer">Trainer</a></li>
-            <li><a href="#client">Client</a></li>
-            <!-- <li><a href="#contract">Contact</a></li> -->
-            <li><a href="#exercise">Exercises</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-  
-      <header class="header" id="home">
-        <div class="section__container header__container">
-          <div class="header__content">
-            <h1>Workouts list</h1>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
           </div>
         </div>
-      </header>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#trainer">Trainer</a></li>
+          <li><a href="#client">Client</a></li>
+          <!-- <li><a href="#contract">Contact</a></li> -->
+          <li><a href="#exercise">Exercises</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <section class="filter-sec">
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1>Workouts list</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="filter-sec">
+      <div class="filter__container">
         <h2>Filters</h2>
         <form id="filter-form">
-          <label for="workout-type">Workout Type:</label>
-          <select id="workout-type">
-            <option value="">Select a workout type</option>
-            <option value="cardio">Cardio</option>
-            <option value="strength">Strength</option>
-            <option value="flexibility">Flexibility</option>
-          </select>
-      
-          <label for="body-part">Body Part:</label>
-          <select id="body-part">
-            <option value="">Select a body part</option>
-            <option value="arms">Arms</option>
-            <option value="legs">Legs</option>
-            <option value="core">Core</option>
-          </select>
-      
-          <label for="difficulty-level">Difficulty Level:</label>
-          <select id="difficulty-level">
-            <option value="">Select a difficulty level</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
-          </select>
-      
-          <label for="duration">Duration:</label>
-          <select id="duration">
-            <option value="">Select a duration</option>
-            <option value="short">Short (0-15 minutes)</option>
-            <option value="medium">Medium (15-30 minutes)</option>
-            <option value="long">Long (30+ minutes)</option>
-          </select>
-      
-          <label for="equipment-needed">Equipment Needed:</label>
-          <select id="equipment-needed">
-            <option value="">Select equipment</option>
-            <option value="none">None</option>
-            <option value="dumbbells">Dumbbells</option>
-            <option value="resistance-bands">Resistance Bands</option>
-          </select>
+          <div class="filter-wrap">
+            <label for="workout-type">Workout Type</label>
+            <select id="workout-type">
+              <option value="">  workout type</option>
+              <option value="cardio">Cardio</option>
+              <option value="strength">Strength</option>
+              <option value="flexibility">Flexibility</option>
+            </select>
+          </div>
+
+          <div class="filter-wrap">
+            <label for="body-part">Body Part</label>
+            <select id="body-part">
+              <option value="">  body part</option>
+              <option value="arms">Arms</option>
+              <option value="legs">Legs</option>
+              <option value="core">Core</option>
+            </select>
+          </div>
+
+          <div class="filter-wrap">
+            <label for="difficulty-level">Difficulty Level</label>
+            <select id="difficulty-level">
+              <option value="">  difficulty level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="filter-wrap">
+            <label for="duration">Duration</label>
+            <select id="duration">
+              <option value="">  duration</option>
+              <option value="short">Short (0-15 minutes)</option>
+              <option value="medium">Medium (15-30 minutes)</option>
+              <option value="long">Long (30+ minutes)</option>
+            </select>
+          </div>
+
+          <div class="filter-wrap">
+            <label for="equipment-needed">Equipment Needed</label>
+            <select id="equipment-needed">
+              <option value=""> equipment</option>
+              <option value="none">None</option>
+              <option value="dumbbells">Dumbbells</option>
+              <option value="resistance-bands">Resistance Bands</option>
+            </select>
+          </div>
 
           <button type="submit">Submit</button>
         </form>
-      </section>
-  
+      </div>
 
       <div id="exercises"></div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="./exerciseScript.js"></script>
-</body>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./exerciseScript.js"></script>
+  </body>
 </html>
