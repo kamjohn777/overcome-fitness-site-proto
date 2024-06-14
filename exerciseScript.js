@@ -14,7 +14,7 @@ $(document).ready(function() {
           var description = item.snippet.description;
   
         //   $('#exercises').append('<h3>' + title + '</h3><p>' + description + '</p><iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-          $('#exercises').append('<div><h3>' + title + '</h3><p>' + description + '</p><iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
+          $('#exercises').append('<div class="video-content-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>' + title + '</h3><p>' + description + '</p></div>');
         });
       }).fail(function(jqXHR, textStatus, errorThrown) {
         console.error('Error making YouTube API request:', textStatus, errorThrown);

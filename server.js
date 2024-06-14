@@ -13,7 +13,7 @@ app.get('/youtube', async (req, res) => {
       params: {
         part: 'snippet',
         maxResults: 4,
-        q: req.query.q,
+        q: 'fitness' + req.query.q,
         type: 'video',
         key: process.env.YOUTUBE_API_KEY
       }
