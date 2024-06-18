@@ -95,4 +95,20 @@ $(document).ready(function () {
     // Redirect to the search results page
     window.location.href = './Excercises.html';
   });
+
+  $('#recipe-form-home').on('submit', function(e) {
+    var fitnessGoals = $('#fitnessGoals').val();
+  var dietGoals = $('#dietGoals').val();
+  var mealType = $('#mealType').val();
+  var caloriesRange = $('#caloriesRange').val();
+
+  // Store the input values in localStorage
+  localStorage.setItem('fitnessGoals', fitnessGoals);
+  localStorage.setItem('dietGoals', dietGoals);
+  localStorage.setItem('mealType', mealType);
+  localStorage.setItem('caloriesRange', caloriesRange);
+
+  // Redirect to the Recipes.html page
+  window.location.href = './Recipes.html';
+  });
 });

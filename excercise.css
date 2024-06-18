@@ -420,7 +420,347 @@ nav {
   color: var(--color7);
 }
 
+/* @media (min-width: 1024px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 539px) {
+  .search-workout-sec {
+    margin-bottom: 550px;
+    /* height: 100vh; */
+  }
+
+  .search-workout-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sww-img-wrap img {
+    margin-top: 50px;
+  }
+
+  .yellow-box-wrap {
+    margin-top: 70px;
+  }
+
+  .search-recipes-sec {
+    background-image: url(./assets/mobile-recipe-bg.png);
+    /* height: 100rem; */
+    height: 85rem;
+  }
+
+  .sww-img-wrap img {
+    width: 417px;
+    height: 622px;
+}
+
+  .yellow-box {
+    background-color: var(--color10);
+    height: 283px;
+    width: 94%;
+}
+
+.yellow-box-wrap {
+  width: 422px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+  .search-recipes-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+  }
+
+  .left-bg-img-wrap {
+    height: 475px;
+    width: 410px;
+    background-color: var(--color7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .left-bg-img-wrap img {
+    height: 457px;
+    width: 400px;
+}
+}
+
+@media (min-width: 539px) and (max-width: 767px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .session__card {
+    padding: 7rem 2rem;
+  }
+
+  .trainer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membership__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .search-workout-wrap {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .search-workout-sec {
+    margin-bottom: 550px;
+    /* height: 100vh; */
+  }
+
+  .search-workout-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sww-img-wrap img {
+    margin-top: 50px;
+  }
+
+  .yellow-box-wrap {
+    margin-top: 70px;
+  }
+
+  .search-recipes-sec {
+    background-image: url(./assets/mobile-recipe-bg.png);
+    /* height: 100rem; */
+    height: 85rem;
+  }
+
+  .search-recipes-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    position: static;
+    padding: 1.5rem 1rem;
+  }
+
+  .nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__logo img {
+    max-width: 160px;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    transform: none;
+    z-index: 1;
+  }
+
+  .header__container {
+    padding-block: 12rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header__content {
+    grid-column: 2/3;
+  }
+
+  /* Below styles will put the about us text on left and paragraph on right */
+  /* .about__header {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .about__header .section__header {
+    text-align: right;
+}
+
+.about__header .section__description {
+    text-align: left;
+} */
+
+  /* .about__grid {
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+  .session {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .session__card {
+    padding: 10rem 2rem;
+  }
+
+  .session__card {
+    padding: 10rem 2rem;
+  }
+
+  .trainer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .membership__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .logo__banner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .search-workout-wrap {
+    display: flex;
+    /* flex-direction: column; */
+  }
+}
+
 @media (min-width: 1024px) {
+  .nav__menu__btn {
+    display: none;
+  }
+  .nav__links {
+    /* z-index: 1; */
+    /* position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color5);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%); */
+}
+  .header__container {
+    padding-block: 10rem;
+    display: grid;
+    justify-items: end;
+}
+
+.about__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+  .trainer__grid {
+    gap: 2rem;
+    display: flex;
+  }
+
+  .membership__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .membership__card {
+    padding: 2rem;
+  }
+
+  .session {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .search-workout-wrap {
+    display: flex;
+} */
+
+.search-recipes-wrap {
+  display: flex;
+  height: 595px;
+  width: 95%;
+  background-color: #201d1dde;
+  justify-content: space-around;
+  align-items: center;
+}
+
+  .blog__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .logo__banner {
+    padding-block: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
   .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
