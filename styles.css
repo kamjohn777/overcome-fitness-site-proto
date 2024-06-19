@@ -116,6 +116,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color5);
+  height: 100px;
 }
 
 .nav__logo img {
@@ -1158,6 +1159,7 @@ nav {
   .nav__header {
     padding: 0;
     background-color: transparent;
+    height: 100px;
   }
 
   .nav__logo img {
