@@ -55,7 +55,6 @@ $(document).ready(function () {
     delay: 1500,
   });
 
-
   const swiperInstance = new Swiper(".swiper", {
     loop: true,
     pagination: {
@@ -70,45 +69,67 @@ $(document).ready(function () {
     $(this).siblings(".input-suggestions-wrap").addClass("active");
     $(this).siblings(".input-suggestions-wrap").slideDown(300);
   });
-  
+
   $(".search-input-div input").on("blur", function (e) {
-    $(this).parent().removeClass("active"); 
+    $(this).parent().removeClass("active");
     $(this).siblings(".input-suggestions-wrap").removeClass("active");
-    $(this).siblings(".input-suggestions-wrap").slideUp(300); 
+    $(this).siblings(".input-suggestions-wrap").slideUp(300);
   });
 
-  $('form').on('submit', function(e) {
+  $("#workout-form").on("submit", function (e) {
     e.preventDefault();
 
-    const fitnessGoals = $('#fitnessGoals').val();
-    const dietGoals = $('#dietGoals').val();
-    const mealType = $('#mealType').val();
-    const caloriesRange = $('#caloriesRange').val();
-
+    const fitnessGoals = $("#fitnessGoals").val();
+    const dietGoals = $("#dietGoals").val();
+    const mealType = $("#mealType").val();
+    const caloriesRange = $("#caloriesRange").val();
 
     // Store the input values in localStorage
-    localStorage.setItem('fitnessGoals', fitnessGoals); 
-    localStorage.setItem('dietGoals', dietGoals);
-    localStorage.setItem('mealType', mealType);
-    localStorage.setItem('caloriesRange', caloriesRange);
+    localStorage.setItem("fitnessGoals", fitnessGoals);
+    localStorage.setItem("dietGoals", dietGoals);
+    localStorage.setItem("mealType", mealType);
+    localStorage.setItem("caloriesRange", caloriesRange);
 
     // Redirect to the search results page
-    window.location.href = './Excercises.html';
+    window.location.href = "./Excercises.html";
   });
 
-  $('#recipe-form-home').on('submit', function(e) {
-    var fitnessGoals = $('#fitnessGoals').val();
-  var dietGoals = $('#dietGoals').val();
-  var mealType = $('#mealType').val();
-  var caloriesRange = $('#caloriesRange').val();
+  $("#recipe-form-home").on("submit", function (e) {
+    var fitnessGoals = $("#fitnessGoals").val();
+    var dietGoals = $("#dietGoals").val();
+    var mealType = $("#mealType").val();
+    var caloriesRange = $("#caloriesRange").val();
 
-  // Store the input values in localStorage
-  localStorage.setItem('fitnessGoals', fitnessGoals);
-  localStorage.setItem('dietGoals', dietGoals);
-  localStorage.setItem('mealType', mealType);
-  localStorage.setItem('caloriesRange', caloriesRange);
+    // Store the input values in localStorage
+    localStorage.setItem("fitnessGoals", fitnessGoals);
+    localStorage.setItem("dietGoals", dietGoals);
+    localStorage.setItem("mealType", mealType);
+    localStorage.setItem("caloriesRange", caloriesRange);
 
-  // Redirect to the Recipes.html page
-  window.location.href = './Recipes.html';
+    // Redirect to the Recipes.html page
+    window.location.href = "./Recipes.html";
+  });
+
+  // BMI Calculator
+  $("#calculate-btn").on("click", function (e) {
+    e.preventDefault();
+
+    // let height = $("#height").val();
+    let heightFeet = $("#height-feet").val();
+  let heightInches = $("#height-inches").val();
+    let weight = $("#weight").val();
+
+    // Convert height from feet to meters and weight from lbs to kg
+    // height = height * 0.3048;
+    let height = (heightFeet * 12 + (+heightInches)) * 0.0254;
+    weight = weight * 0.453592;
+
+    // Calculate BMI
+    let bmi = weight / Math.pow(height, 2);
+
+    // Display the BMI result
+    $("#bmi-result").text(bmi.toFixed(2));
+
+    // return false;
   });
 });

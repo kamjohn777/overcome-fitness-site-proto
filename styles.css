@@ -344,6 +344,61 @@ nav {
   overflow: hidden;
   margin-bottom: 150px;
   margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi-calculator-wrap {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.bmi-calculator-wrap h2 {
+  text-align: center;
+  margin-bottom: 41px;
+  font-size: 34px;
+  font-family: var(--header-font);
+  color: var(--text-color1);
+}
+
+.bcw-sub-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.bmi-cal-img {
+  position: absolute;
+}
+
+.bcl-image {
+  width: 483px;
+  height: 506px;
+}
+
+.bmi-calculator-right {
+  background: white;
+  height: 506px;
+  width: 483px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bmi-form {
+  height: 85%;
+}
+
+.bmi-input-group {
+  border: 1px solid var(--text-color3);
+  width: 358px;
+  height: 56px;
 }
 /* End of BMI content */
 
