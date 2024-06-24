@@ -421,36 +421,47 @@
         </div>
 
         <div class="bmi-calculator-right">
-          <form id="bmi-form">
-            <div class="bmi-input-group">
-              <label for="age">Enter Age</label>
-              <input type="number" id="age" name="age" placeholder="Enter your age" />
-            </div>
-        
-            <div class="bmi-input-group">
-              <label>Gender</label>
-              <input type="radio" id="male" name="gender" value="male" />
-              <label for="male">Male</label>
-              <input type="radio" id="female" name="gender" value="female" />
-              <label for="female">Female</label>
-            </div>
-        
-            <div class="bmi-input-group">
-              <label for="height-feet">Height (feet)</label>
-              <input type="number" id="height-feet" name="height-feet" placeholder="Enter your height in feet" />
-            
-              <label for="height-inches">Height (inches)</label>
-              <input type="number" id="height-inches" name="height-inches" placeholder="Enter your height in inches" />
-            </div>
+            <form id="bmi-form">
+              <!-- <div class="bmi-input-group">
+                <label for="age">Enter Age</label>
+                <input type="number" id="age" name="age" class="age-input" placeholder=" age" />
+              </div>
+          
+              <div class="bmi-input-group gender-group">
+                  <div class="biggg-div">
+                    <input type="radio" id="male" name="gender" class="gender-input" value="male" />
+                <label for="male">Male</label>
+                  </div>
+                <div class="biggg-div">
+                  <input type="radio" id="female" name="gender" class="gender-input" value="female" />
+                <label for="female">Female</label>
+                </div>
+              </div> -->
+          
+              <div class="bmi-input-group">
+                <label for="height-feet">Height (feet)</label>
+                <input type="number" id="height-feet" name="height-feet" class="height-input" placeholder="feet" />
+              </div>
 
-            <div class="bmi-input-group">
-              <label for="weight">Weight (lbs)</label>
-              <input type="number" id="weight" name="weight" placeholder="Enter your weight" />
-            </div>
-        
-            <button type="submit" id="calculate-btn" class="">CALCULATE</button>
-          </form>
-          <div id="bmi-result"></div>
+              <div class="bmi-input-group">
+                <label for="height-inches">Height (inches)</label>
+                <input type="number" id="height-inches" name="height-inches" class="height-input" placeholder="inches" />
+              </div>
+          
+              <div class="bmi-input-group">
+                <label for="weight">Weight (lbs)</label>
+                <input type="number" id="weight" name="weight" class="weight-input" placeholder="lbs" />
+              </div>
+
+              <div class="bmi-result-wrap">
+                <p>Your bmi</p>
+                <div id="bmi-result" class="bmi-result"></div>
+              </div>
+          
+              <button type="submit" id="calculate-btn" class="calculate-btn">CALCULATE BMI</button>
+            </form>
+          <!-- </div>
+          <div id="bmi-result"></div> -->
         </div>
       </div>
     </section>

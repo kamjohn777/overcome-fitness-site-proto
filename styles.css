@@ -10,6 +10,8 @@
   --color9: #957609;
   --color10: #fff197;
   --color11: #ffffff;
+  --color12: #FFFCE6;
+  --color13: #FFF197;
 
   --max-width: 1200px;
   --header-font: "Oswald", sans-serif;
@@ -393,12 +395,119 @@ nav {
 
 #bmi-form {
   height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .bmi-input-group {
   border: 1px solid var(--text-color3);
   width: 358px;
   height: 56px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.age-input {
+  width: 59px;
+  height: 32px;
+}
+
+.bmi-input-group input {
+  width: 59px;
+  height: 32px;
+  text-align: center;
+}
+
+.age-input::placeholder {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.bmi-input-group.gender-group {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+
+
+/* Hide the default radio button */
+.gender-input {
+  display: none;
+}
+
+/* Create a custom radio button */
+.gender-input + label:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 1px;
+  background-color: var(--text-color3);
+  border: 2px solid var(--text-color3);
+  /* padding: 5px; */
+  border-radius: 50%;
+}
+
+.biggg-div label {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the custom radio button when checked */
+.gender-input:checked + label:before {
+  background-color: var(--color7);
+}
+
+/* Style the custom radio button when hovered */
+.gender-input:hover + label:before {
+  border-color: var(--color7);
+}
+
+.bmi-result-wrap {
+  width: 358px;
+  height: 56px;
+  /* border: 1px solid black; */
+  background: var(--color12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bmi-result-wrap p {
+  font-size: 20px;
+  font-family: var(--header-font);
+  color: var(--text-color1);
+
+}
+
+.bmi-result {
+  width: 74px;
+  height: 46px;
+  background-color: var(--color13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculate-btn {
+  background-color: var(--color7);
+  /* width: 180px;s */
+  width: 358px;
+  height: 56px;
+  text-align: center;
+  transition: 0.3s;
+  border: none;
+  font-size: 20px;
+  font-family: var(--header-font);
 }
 /* End of BMI content */
 
