@@ -327,6 +327,26 @@ nav {
   color: var(--color8);
 }
 
+/* BMI cpontent */
+.hr-trainer-bmi {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.bmi-calculator {
+  background-image: url(./assets/BMI-bg-rec.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+/* End of BMI content */
+
 .trainer__grid {
   margin-top: 4rem;
   display: grid;
