@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./excercise.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Excercises</title>
   </head>
   <body>
@@ -47,7 +50,7 @@
           <div class="filter-wrap">
             <label for="workout-type">Workout Type</label>
             <select id="workout-type">
-              <option value="">  workout type</option>
+              <option value="">workout type</option>
               <option value="cardio">Cardio</option>
               <option value="strength">Strength</option>
               <option value="flexibility">Flexibility</option>
@@ -57,7 +60,7 @@
           <div class="filter-wrap">
             <label for="body-part">Body Part</label>
             <select id="body-part">
-              <option value="">  body part</option>
+              <option value="">body part</option>
               <option value="arms">Arms</option>
               <option value="legs">Legs</option>
               <option value="core">Core</option>
@@ -67,7 +70,7 @@
           <div class="filter-wrap">
             <label for="difficulty-level">Difficulty Level</label>
             <select id="difficulty-level">
-              <option value="">  difficulty level</option>
+              <option value="">difficulty level</option>
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
               <option value="advanced">Advanced</option>
@@ -77,7 +80,7 @@
           <div class="filter-wrap">
             <label for="duration">Duration</label>
             <select id="duration">
-              <option value="">  duration</option>
+              <option value="">duration</option>
               <option value="short">Short (0-15 minutes)</option>
               <option value="medium">Medium (15-30 minutes)</option>
               <option value="long">Long (30+ minutes)</option>
@@ -87,7 +90,7 @@
           <div class="filter-wrap">
             <label for="equipment-needed">Equipment Needed</label>
             <select id="equipment-needed">
-              <option value=""> equipment</option>
+              <option value="">equipment</option>
               <option value="none">None</option>
               <option value="dumbbells">Dumbbells</option>
               <option value="resistance-bands">Resistance Bands</option>
@@ -99,88 +102,114 @@
       </div>
 
       <div id="exercises">
-        <h3>Hello testing</h3>
+        <!-- <img src="./assets/deault-excercise-image1.png" alt=""> -->
+        <div class="video-content-wrap">
+          <img class="vcw-img" src="./assets/workout-img1.png" alt="" />
+          <div class="video-content">
+            <div class="vc-text-description">
+              <div class="vtd-text-div">
+                <p>full body</p>
+                <h3>Cardio</h3>
+              </div>
+              <p>30 minutes</p>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nemo illum repellat excepturi veniam voluptas similique, quas
+              exercitationem molestias animi deleniti ab? Officia, autem ipsam.
+            </p>
+          </div>
+
+          <a
+            class="video-link-default"
+            href="https://www.youtube.com/watch?v=ml6cT4AZdqI"
+            target="_blank"
+            >&#9658;</a
+          >
+        </div>
       </div>
     </section>
 
     <footer class="footer" id="contact">
-        <div class="section__container footer__container">
-          <div class="footer__col">
-            <div class="footer__logo">
-              <a href="#"><img src="./assets/Overcome_logo.png" alt="logo" /></a>
-            </div>
-            <p>
-              welcome to Overcome Fitness, where we're dedicated to helping you
-              achieve your fitness goals and transform your life. Our expert
-              trainers, state-of-the-art facilities, and supportive community are
-              here to empower you every step of the way. Join us and start your
-              journey to a healthier, happier you today.
-            </p>
-            <ul class="footer__links">
-              <li>
-                <a href="#">
-                  <span><i class="ri-map-pin-fill"></i></span>
-                  124 Main Street <br />
-                  Housotn, TX 77002 fake address
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="ri-phone-fill"></i></span>
-                  +91 1234567890
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="ri-mail-fill"></i></span>
-                  fakeOVERCOMEEmail@overcome.com
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="ri-map-pin-fill"></i></span>
-                  124 Main Street <br />
-                  Housotn, TX 77002 fake address
-                </a>
-              </li>
-            </ul>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#"><img src="./assets/Overcome_logo.png" alt="logo" /></a>
           </div>
-          <div class="footer__col">
-            <h4>GALLERY</h4>
-            <div class="gallery__grid">
-              <img src="./assets/gallery-1.jpg" alt="gallery" />
-              <img src="./assets/gallery-2.jpg" alt="gallery" />
-              <img src="./assets/gallery-3.jpg" alt="gallery" />
-              <img src="./assets/gallery-4.jpg" alt="gallery" />
-              <img src="./assets/gallery-5.jpg" alt="gallery" />
-              <img src="./assets/gallery-6.jpg" alt="gallery" />
-              <img src="./assets/gallery-7.jpg" alt="gallery" />
-              <img src="./assets/gallery-8.jpg" alt="gallery" />
-              <img src="./assets/gallery-9.jpg" alt="gallery" />
-            </div>
-          </div>
-          <div class="footer__col">
-            <h4>NEWSLETTER</h4>
-            <p>
-              Don't miss out on the latest news, updates, and special offers from
-              Overcome Fitness. Sign up for our newsletter today!
-            </p>
-            <form action="/">
-              <input type="text" placeholder="Enter Email" />
-              <button class="btn btn__primary">SEND</button>
-            </form>
-            <div class="footer__socials">
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-              <a href="#"><i class="ri-youtube-fill"></i></a>
-            </div>
+          <p>
+            welcome to Overcome Fitness, where we're dedicated to helping you
+            achieve your fitness goals and transform your life. Our expert
+            trainers, state-of-the-art facilities, and supportive community are
+            here to empower you every step of the way. Join us and start your
+            journey to a healthier, happier you today.
+          </p>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span>
+                124 Main Street <br />
+                Housotn, TX 77002 fake address
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span>
+                +91 1234567890
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span>
+                fakeOVERCOMEEmail@overcome.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span>
+                124 Main Street <br />
+                Housotn, TX 77002 fake address
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>GALLERY</h4>
+          <div class="gallery__grid">
+            <img src="./assets/gallery-1.jpg" alt="gallery" />
+            <img src="./assets/gallery-2.jpg" alt="gallery" />
+            <img src="./assets/gallery-3.jpg" alt="gallery" />
+            <img src="./assets/gallery-4.jpg" alt="gallery" />
+            <img src="./assets/gallery-5.jpg" alt="gallery" />
+            <img src="./assets/gallery-6.jpg" alt="gallery" />
+            <img src="./assets/gallery-7.jpg" alt="gallery" />
+            <img src="./assets/gallery-8.jpg" alt="gallery" />
+            <img src="./assets/gallery-9.jpg" alt="gallery" />
           </div>
         </div>
-        <div class="footer__bar">
-          Copyright c 2024 Overcome Fitness. All Rights Reserved.
+        <div class="footer__col">
+          <h4>NEWSLETTER</h4>
+          <p>
+            Don't miss out on the latest news, updates, and special offers from
+            Overcome Fitness. Sign up for our newsletter today!
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Enter Email" />
+            <button class="btn btn__primary">SEND</button>
+          </form>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
         </div>
-      </footer>
-  
+      </div>
+      <div class="footer__bar">
+        Copyright c 2024 Overcome Fitness. All Rights Reserved.
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./exerciseScript.js"></script>

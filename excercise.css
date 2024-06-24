@@ -612,6 +612,67 @@ nav {
   }
 }
 
+/* default video content styling */
+.video-content-wrap {
+  position: relative;
+}
+
+  .vcw-img {
+    width: 500px;
+    height: 223px;
+    margin: 10px auto;
+  }
+
+  .vc-text-description {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 55px;
+    margin: auto;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+
+  .vtd-text-div {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;
+  }
+
+  .vtd-text-div p {
+    text-transform: uppercase;
+    color: var(--text-color2);
+    font-size: 14px;
+  }
+
+  .video-link-default {
+    background-color: var(--color7);
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 12px #00000036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 6%;
+    top: 44%;
+    color: #fff;  /* Added this line to make the text color white */
+    text-decoration: none;  /* Added this line to remove the underline from the link */
+    font-size: 16px;  /* Added this line to set the font size */
+    padding: 0;  /* Added this line to remove the padding */
+  }
+
+.video-content-wrap button {
+  width: 50px;
+    height: 34px;
+    background: transparent;
+    border: none;
+}
+/* End of default content styling */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   nav {
     position: static;

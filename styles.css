@@ -1258,6 +1258,35 @@ nav {
 .search-input-div {
   width: 100%;
 }
+
+.bmi-calculator {
+  background-image: url(./assets/BMI-bg-rec.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 1200px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bcw-sub-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.bmi-calculator-left {
+  margin-bottom: 55px;
+}
 }
 
 @media (min-width: 539px) and (max-width: 767px) {
