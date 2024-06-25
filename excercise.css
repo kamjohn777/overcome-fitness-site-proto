@@ -541,6 +541,14 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
+.video-content-wrap {
+  width: 100%;
+  height: 458px;
+  border: var(--text-color3) 1.5px solid;
+  display: flex;
+  flex-direction: column;
+}
 }
 
 @media (min-width: 539px) and (max-width: 767px) {
