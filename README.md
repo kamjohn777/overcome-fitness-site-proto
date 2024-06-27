@@ -41,3 +41,5 @@ The development of Overcome Fitness adhered to clear software design and functio
 While Overcome Fitness primarily focused on frontend development using HTML, CSS, JavaScript, and jQuery, understanding algorithms, logic, and data structures was crucial for implementing efficient solutions. This included managing user sessions, handling form submissions, and integrating real-time data with Node.js and Express.js. By applying logical structures and algorithms, the application operates smoothly and meets user expectations.
 
 ---
+![Overcome Fitness](./assets/overcome-homepage.png)
+![Overcome Fitness](./assets/overcome-fitness-recipes.png)
